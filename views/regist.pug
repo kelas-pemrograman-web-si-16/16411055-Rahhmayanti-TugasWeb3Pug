@@ -1,0 +1,28 @@
+html
+    head
+        include head.pug
+    body
+    form(action="/")
+    center
+        .modal-dialog.text-center
+            .cool-sm-12.main-section
+                .modal-content
+                    .col-12.tittle-login
+                        br
+                        h2 Register
+                        br
+                        form(action="/")
+                            .form-group
+                                input.form-control(type='text', placeholder='User Name')
+                            .form-group
+                                input.form-control(type='text', placeholder='Email Address')
+                            .form-group
+                                input.form-control(type='email', placeholder='Phone')
+                            .form-group
+                                input.form-control(type='password', placeholder='Password')
+
+                            form(action="/")
+                                a.btn.btn-primary(href='#') Create New Account
+                                hr
+                                button.btn.btn-primary(type='submit') Sign In
+                                small#emailHelp.form-text.text-muted if you already have an account.
